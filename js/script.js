@@ -101,7 +101,7 @@ const cursorObject = new THREE.Mesh(
   //   normalMap: normalTexture,
   // })
 );
-// cursorObject.visible = false;
+ cursorObject.visible = false;
 scene.add(cursorObject)
 
 document.body.onscroll = moveCamera;
@@ -183,7 +183,7 @@ function onWindowResize() {
 
 function animate() {
   requestAnimationFrame(animate);
-  moon.rotation.x += 0.005;
+  moon.rotation.x += 0.008;
   controls.update();
   renderer.render(scene, camera);
 }
