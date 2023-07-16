@@ -1,0 +1,114 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+*{
+  user-select: none;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 250px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+
+.contentDiv {
+  color: white;
+  z-index: 99;
+  position: absolute;
+  margin: 0px auto;
+  padding: 120px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1,
+h2,
+h3,
+blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color:antiquewhite
+}
+
+h3{
+  color : blueviolet
+}
+
+h4{
+   color :tan
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 8;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+  border-radius: 20px;
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 0.5rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  border-radius: 20px;
+}
+
+.skill{
+  display: inline-block;
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+.skill:hover{
+  color:black;  
+  background-color: lightskyblue;
+  border: 2px solid black;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
+
+.right {
+  grid-column: 6 / 12;
+  /* box-shadow: 5px 5px #888888; */
+}
+
+.left{
+  /* box-shadow : -5px 5px #888888; */
+}
