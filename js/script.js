@@ -121,7 +121,7 @@ function onmousemove(event) {
   raycaster.ray.intersectPlane(plane, intersectPoint);
   cursorObject.position.copy(intersectPoint);
   cursorObject.position.z = 0;
-  moveStar();
+ // moveStar();
 }
 
 function moveStar() {
@@ -189,3 +189,13 @@ function animate() {
 }
 
 animate();
+
+const canvas = document.getElementById("profileCanvas");
+const context = canvas.getContext('2d');
+
+const img = new Image();
+img.src = '/images/moon.jpg';
+img.onload = function (e)
+{
+    context.drawImage(img, 0, 0);
+}

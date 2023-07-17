@@ -2,12 +2,6 @@
 *{
   user-select: none;
 }
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
   --spacing: 250px;
@@ -22,7 +16,6 @@ body::-webkit-scrollbar {
   overflow: hidden;
 }
 
-
 .contentDiv {
   color: white;
   z-index: 99;
@@ -32,6 +25,31 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+.header{
+  display: flex;
+  flex-direction: column;
+}
+#myCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+ 
+}
+#profileCanvas{
+  border : 2px solid white;
+  border-radius: 105px;
+  height: 10rem;
+  width: 10rem;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
 
 h1,
 h2,
@@ -49,11 +67,6 @@ h3{
 
 h4{
    color :tan
-}
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 
 header {
