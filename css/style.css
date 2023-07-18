@@ -36,10 +36,64 @@ body::-webkit-scrollbar {
  
 }
 #profileCanvas{
+  /* border : 2px solid white; */
+  border-radius: 105px;
+  height: 10rem;
+  width: 10rem;
+}
+
+.profileCanvasParent{
   border : 2px solid white;
   border-radius: 105px;
   height: 10rem;
   width: 10rem;
+  padding: 0.25rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* .profileCanvasParent::before{
+  content: '';
+  border : 2px solid red;
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  animation: spin 4s linear infinite;
+  background-color: aqua;
+}
+.profileCanvasParent::after{
+  content: '';
+  border : 2px solid red;
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  animation: spin 4s linear infinite;
+  background-color: blue;
+  inset: 5px;
+} */
+
+
+
+@-moz-keyframes spin { 
+  from { 
+      -moz-transform: rotate(0deg); 
+  } to { 
+      -moz-transform: rotate(360deg); 
+  }
+}
+@-webkit-keyframes spin { 
+  from { 
+      -webkit-transform: rotate(0deg); 
+  } to { 
+      -webkit-transform: rotate(360deg); 
+  }
+}
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(360deg); 
+  }
 }
 
 .profile{
@@ -47,8 +101,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-  
+    flex-wrap: wrap;  
   }
 
 h1,
@@ -80,7 +133,7 @@ header {
 
 section {
   grid-column: 2 / 8;
-  padding: 0.5rem;
+  padding: 1rem;
   background: var(--dark-bg);
   font-size: 1.25rem;
   line-height: 1.5;
